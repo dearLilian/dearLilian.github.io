@@ -1,7 +1,7 @@
 # Basic
-title: 李文宝
-subtitle: The window to see me
-description: Welcome to my home~
+title: LILIAN
+subtitle: 心灵之窗
+description: 经过了这么多年，我们终于看清了自己
 # 头像里面的标题
 avatarTitle: dearLilian
 # 头像里面的描述
@@ -24,7 +24,8 @@ social:
 # 百度统计 
 # 使用博客模板请去掉或者更换 id 
 baidu:
-    id: 8ba1c6be0953b6f9c2ba38e57f615421  
+    #id: 8ba1c6be0953b6f9c2ba38e57f615421  
+    id: e572ae9801b3a18891f123796b889f77
 
 # Google Analytics
 # 使用博客模板请去掉或者更换 id
