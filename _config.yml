@@ -5,7 +5,7 @@ description: Welcome to my home~
 # 头像里面的标题
 avatarTitle: dearLilian
 # 头像里面的描述
-avatarDesc: DataMining / Machine Learning
+avatarDesc: 数据挖掘 / 机器学习
 url: "http://lilian.info"
 
 # Comment
@@ -62,6 +62,6 @@ nav:
     
 
 # Pagination
-#gems: [jekyll-paginate,jekyll-sitemap]
-#paginate: 20
-#paginate_path: "page/:num/"
+gems: [jekyll-paginate,jekyll-sitemap]
+paginate: 20
+paginate_path: "page/:num/"
