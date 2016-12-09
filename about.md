@@ -5,10 +5,16 @@ title: 关于我
 
 书写生活，充实自我。
 
+### 简介
 
 - 领域：数据挖掘，机器学习
 
 - 语言：java,python
+
+### 更多信息
+
+<p>
+<a href="http://dm.uestc.edu.cn/wenbao-li/">My Profile</a>
 
 
 <p>
