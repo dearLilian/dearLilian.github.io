@@ -5,13 +5,12 @@ title: 关于我
 
 书写生活，充实自我。
 
-<p>
-领域：数据挖掘，机器学习
 
-语言：java,python
-<p>
+- 领域：数据挖掘，机器学习
 
-如果你想使用我这个博客模板，可以看我的 
-<a href="/2016/10/jekyll_tutorials1/"> Jekyll 搭建个人博客 </a>
+- 语言：java,python
+
 
 <p>
+本博客模板来自baixin.io，有兴趣者请参考该博客（来自http://baixin.io/#blog） 
+<a href="http://baixin.io/2016/10/jekyll_tutorials1/"> Jekyll 搭建个人博客 </a>
