@@ -110,6 +110,8 @@ h1 {
   font-size: 2.0em;
   line-height: 1.2em;
   letter-spacing: .05em; 
+  border-radius: 4px; 
+  
 }
 
 h2 {
@@ -434,8 +436,13 @@ img::-moz-selection {
 
   .post-comments {
     border-top: 1px solid #DDDDDD;
+
     padding: 60px 0; }
 
+  .post-title {
+    font-family:'黑体';
+    padding: 15px 0; 
+  }
   .post-meta {
     margin: 0;
     color: #c7c7c7; 
