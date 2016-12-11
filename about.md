@@ -18,5 +18,8 @@ title: 关于我
 
 
 <p>
-本博客模板来自baixin.io，有兴趣者请参考该博客（来自http://baixin.io/#blog） 
-<a href="http://baixin.io/2016/10/jekyll_tutorials1/"> Jekyll 搭建个人博客 </a>
+本博客模板基于baixin.io，有兴趣者请参考该博客（来自http://baixin.io/#blog） 
+<a href="http://baixin.io/2016/10/jekyll_tutorials1/"> Jekyll 搭建个人博客 </a></p>
+
+<p>
+同时在原来模板基础上有部分修改与内容的添加（打赏，一键分享，留言板）。后续还会有更多内容。</p>
