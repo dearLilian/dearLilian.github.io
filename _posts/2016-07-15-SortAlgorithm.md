@@ -58,42 +58,42 @@ public static void InsertSort(int[] arr){
 
 ```java
 public static void halfInsertSort(int[] arr){
-		if(arr == null || arr.length == 0){
-			System.err.println("ERROR INPUT");
-			return;
-		}
-		
-		for(int i = 1; i < arr.length; i++){
-			
-			int temp = arr[i];
-			
-			int low = 0;
-			int high = i - 1;
-			int idx = -1;
-			while(low <= high){
-				int m = (low+high)/2;
-				
-				if(arr[m] < temp){
-					low = m+1;
-				}else if(arr[m] > temp){
-					high = m-1;
-				}else{
-					idx = m+1;
-					break;
-				}
-			}
-			if(low > high){
-				idx = high + 1;
-			}
-			
-			for(int j = i-1; j >= idx; j--){
-				arr[j+1] = arr[j];
-			}
-			
-			arr[idx] = temp;
-		}
-		
+	if(arr == null || arr.length == 0){
+		System.err.println("ERROR INPUT");
+		return;
 	}
+	
+	for(int i = 1; i < arr.length; i++){
+		
+		int temp = arr[i];
+		
+		int low = 0;
+		int high = i - 1;
+		int idx = -1;
+		while(low <= high){
+			int m = (low+high)/2;
+			
+			if(arr[m] < temp){
+				low = m+1;
+			}else if(arr[m] > temp){
+				high = m-1;
+			}else{
+				idx = m+1;
+				break;
+			}
+		}
+		if(low > high){
+			idx = high + 1;
+		}
+		
+		for(int j = i-1; j >= idx; j--){
+			arr[j+1] = arr[j];
+		}
+		
+		arr[idx] = temp;
+	}
+	
+}
 ```
 
 #### 1.2.3 算法分析
@@ -135,29 +135,29 @@ public static void halfInsertSort(int[] arr){
 
 ```java
 public static void BubbleSort(int[] arr){
-		if(arr == null || arr.length == 0){
-			System.err.println("Error input");
-			return;
+	if(arr == null || arr.length == 0){
+		System.err.println("Error input");
+		return;
+	}
+	
+	for(int i = arr.length-1; i >= 1; i--){
+		
+		boolean flag = false;
+		for(int j = 0; j < i; j++){
+			if(arr[j] > arr[j+1]){
+				int temp = arr[j];
+				arr[j] = arr[j+1];
+				arr[j+1] = temp;
+				
+				flag = true;
+			}
 		}
 		
-		for(int i = arr.length-1; i >= 1; i--){
-			
-			boolean flag = false;
-			for(int j = 0; j < i; j++){
-				if(arr[j] > arr[j+1]){
-					int temp = arr[j];
-					arr[j] = arr[j+1];
-					arr[j+1] = temp;
-					
-					flag = true;
-				}
-			}
-			
-			if(flag == false){
-				return;
-			}
+		if(flag == false){
+			return;
 		}
 	}
+}
 ```
 
 #### 2.1.3 算法分析
@@ -175,96 +175,96 @@ public static void BubbleSort(int[] arr){
 
 ```java
 public static void QuickSort(int[] arr, int l, int r){
-		if(arr == null || arr.length == 0 || l < 0 || r >= arr.length){
-			System.err.println("ERROR INPUT");
-			return;
-		}
-		
-		int i = l;
-		int j = r;
-		if(l < r){
-			int temp = arr[l];
-			while(i != j){
-				while(j > i && arr[j] > arr[i]){
-					j--;
-				}
-				
-				if(i < j){
-					arr[i] = arr[j];
-					i++;
-				}
-				
-				
-				while(j > i && arr[i] < arr[j]){
-					i++;
-				}
-				if(i < j){
-					
-					arr[j] = arr[i];
-					j--;
-				}
-				
+	if(arr == null || arr.length == 0 || l < 0 || r >= arr.length){
+		System.err.println("ERROR INPUT");
+		return;
+	}
+	
+	int i = l;
+	int j = r;
+	if(l < r){
+		int temp = arr[l];
+		while(i != j){
+			while(j > i && arr[j] > arr[i]){
+				j--;
 			}
 			
-			arr[i] = temp;
-			QuickSort(arr, l, i-1);
-			QuickSort(arr, i+1, r);
+			if(i < j){
+				arr[i] = arr[j];
+				i++;
+			}
+			
+			
+			while(j > i && arr[i] < arr[j]){
+				i++;
+			}
+			if(i < j){
+				
+				arr[j] = arr[i];
+				j--;
+			}
+			
 		}
+		
+		arr[i] = temp;
+		QuickSort(arr, l, i-1);
+		QuickSort(arr, i+1, r);
 	}
+}
 ```
 
 
 另外一个写法：
 
 ```java
-    public int Partition(char[] arr, int start, int end){
-        if(arr == null || arr.length == 0 || start < 0 || end < 0){
-            return -1;
-        }
+public int Partition(char[] arr, int start, int end){
+    if(arr == null || arr.length == 0 || start < 0 || end < 0){
+        return -1;
+    }
 
-        int index = start + (int)(Math.random() * ((end - start) + 1));//随机选择一个作为标杆的数字
+    int index = start + (int)(Math.random() * ((end - start) + 1));//随机选择一个作为标杆的数字
 
 
-        //将标杆放在数组最后一位
+    //将标杆放在数组最后一位
 //        System.out.println(arr.toString());
 //        System.out.println(arr[index]);
 //        System.out.println(arr[end]);
-        char tmp = arr[index]; arr[index] = arr[end]; arr[end] = tmp;
+    char tmp = arr[index]; arr[index] = arr[end]; arr[end] = tmp;
 
-        int small = start - 1;//small用来存储从右到左第一个小于标杆的数字的下标
-        for(index = start; index < end; index++){
-            if(arr[index] < arr[end]){//如果小于标杆
-                small++;//更新第一个小的
-                if(small != index){//如果当前遍历的不是第一个小的
-                    tmp = arr[index];arr[index] = arr[small];arr[small] = tmp;//将当前遍历的数字放在第一个小的位置上
+    int small = start - 1;//small用来存储从右到左第一个小于标杆的数字的下标
+    for(index = start; index < end; index++){
+        if(arr[index] < arr[end]){//如果小于标杆
+            small++;//更新第一个小的
+            if(small != index){//如果当前遍历的不是第一个小的
+                tmp = arr[index];arr[index] = arr[small];arr[small] = tmp;//将当前遍历的数字放在第一个小的位置上
 
-                }
             }
         }
-
-        //由于small指示的是从右到左第一个小于标杆的，而此时标杆还放在数组最后，因此，应该将标杆放在small后面一位。
-        small++;
-        tmp = arr[small];arr[small] = arr[end]; arr[end] = tmp;
-
-        return small;//返回位置为所选择的标杆最后的位置
-
-
     }
-    
-    public void QuickSort(char[] arr, int start, int end){
 
-	    if(start == end){
-	        return;
-	    }
-	    int index = Partition(arr, start, end);
-	
-	    if(index > start){
-	        QuickSort(arr, start, index - 1);
-	    }
-	    if(index < end){
-	        QuickSort(arr, index + 1, end);
-	    }
-	}
+    //由于small指示的是从右到左第一个小于标杆的，而此时标杆还放在数组最后，因此，应该将标杆放在small后面一位。
+    small++;
+    tmp = arr[small];arr[small] = arr[end]; arr[end] = tmp;
+
+    return small;//返回位置为所选择的标杆最后的位置
+
+
+}
+
+public void QuickSort(char[] arr, int start, int end){
+
+    if(start == end){
+        return;
+    }
+    int index = Partition(arr, start, end);
+
+    if(index > start){
+        QuickSort(arr, start, index - 1);
+    }
+    if(index < end){
+        QuickSort(arr, index + 1, end);
+    }
+}
 ```
 
 #### 2.2.3 算法分析
@@ -283,31 +283,31 @@ public static void QuickSort(int[] arr, int l, int r){
 #### 3.1.2 代码：
 
 ```java
-	public static void SimpleSelectSort(int[] arr){
-		
-		if(arr == null || arr.length == 0){
-			System.err.println("ERROR INPUT");
-			return;
-		}
-		
-		
-		for(int i = 0; i < arr.length; i++){
-			int temp = arr[i];
-			
-			int min = arr[i];
-			int idx = i;
-			for(int j = i; j < arr.length; j++){
-				if(arr[j] < min){
-					min = arr[j];
-					idx = j;
-				}
-			}
-			
-			arr[idx] = temp;
-			arr[i] = min;
-			
-		}
+public static void SimpleSelectSort(int[] arr){
+	
+	if(arr == null || arr.length == 0){
+		System.err.println("ERROR INPUT");
+		return;
 	}
+	
+	
+	for(int i = 0; i < arr.length; i++){
+		int temp = arr[i];
+		
+		int min = arr[i];
+		int idx = i;
+		for(int j = i; j < arr.length; j++){
+			if(arr[j] < min){
+				min = arr[j];
+				idx = j;
+			}
+		}
+		
+		arr[idx] = temp;
+		arr[i] = min;
+		
+	}
+}
 ```
 
 #### 3.1.3 算法分析：
@@ -325,63 +325,63 @@ public static void QuickSort(int[] arr, int l, int r){
 
 ```java
 /**
-	 * 本函数完成对在数组Ｒ[low]到Ｒ[high]范围内对在位置low上的结点进行调整
-	 * @param arr
-	 * @param low
-	 * @param high
-	 */
-	public static void shift(int[] arr, int low, int high){
-		if(arr == null || arr.length == 0){
-			return;
-			
-		}
+* 本函数完成对在数组Ｒ[low]到Ｒ[high]范围内对在位置low上的结点进行调整
+* @param arr
+* @param low
+* @param high
+*/
+public static void shift(int[] arr, int low, int high){
+	if(arr == null || arr.length == 0){
+		return;
 		
-		int i = low;
-		int j = 2 * i;//arr[j]是arr[i]的左孩子结点
-		int temp = arr[i];
-		while(j <= high){
-			if(j < high && arr[j] < arr[j+1]){//若右孩子较大，则把j指向右孩子
-				j++;						//j变为2*i+1
-			}
-			
-			if(temp < arr[j]){//将Ｒ[j]调整到双亲位置上
-				arr[i] = arr[j];
-				i = j;
-				j = 2 * i;
-			}else{
-				break;//调整结束
-			}
-		}
-		
-		arr[i] = temp;//被调整结点的值放入最终位置
 	}
 	
-	/**
-	 * 堆排序函数
-	 * @param arr
-	 */
-	
-	public static void heapSort(int[] arr){
-		if(arr == null || arr.length == 0){//输入参数的非法性检查
-			System.err.println("ERROR INPUT");
-			return;
+	int i = low;
+	int j = 2 * i;//arr[j]是arr[i]的左孩子结点
+	int temp = arr[i];
+	while(j <= high){
+		if(j < high && arr[j] < arr[j+1]){//若右孩子较大，则把j指向右孩子
+			j++;						//j变为2*i+1
 		}
 		
-		int i;
-		int temp;
-		int n = arr.length;
-		
-		for(i = n / 2; i >= 0; i--){//建立初始堆
-			shift(arr, i, n-1);
-		}
-		
-		for(i = n-1; i >= 1; i--){//进行n-1次循环完成堆排序
-			temp = arr[0];
-			arr[0] = arr[i];
-			arr[i] = temp;
-			shift(arr, 0, i-1);//在减少了１个元素的无序序列中进行调整
+		if(temp < arr[j]){//将Ｒ[j]调整到双亲位置上
+			arr[i] = arr[j];
+			i = j;
+			j = 2 * i;
+		}else{
+			break;//调整结束
 		}
 	}
+	
+	arr[i] = temp;//被调整结点的值放入最终位置
+}
+
+/**
+ * 堆排序函数
+ * @param arr
+ */
+
+public static void heapSort(int[] arr){
+	if(arr == null || arr.length == 0){//输入参数的非法性检查
+		System.err.println("ERROR INPUT");
+		return;
+	}
+	
+	int i;
+	int temp;
+	int n = arr.length;
+	
+	for(i = n / 2; i >= 0; i--){//建立初始堆
+		shift(arr, i, n-1);
+	}
+	
+	for(i = n-1; i >= 1; i--){//进行n-1次循环完成堆排序
+		temp = arr[0];
+		arr[0] = arr[i];
+		arr[i] = temp;
+		shift(arr, 0, i-1);//在减少了１个元素的无序序列中进行调整
+	}
+}
 ```
 
 #### 3.2.3 算法分析：
