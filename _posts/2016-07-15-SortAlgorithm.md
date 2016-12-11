@@ -15,35 +15,37 @@ tag: 数据结构
 >每次取剩下的一个元素插入到已经有序的序列中．
 
 #### 1.1.2 代码
-```
+
+
+{% highlight java %}
 public static void InsertSort(int[] arr){
-		if(arr == null || arr.length == 0){
-			System.err.println("ERROR INPUT");
-			return;
-		}
-		
-		int n = arr.length;
-		
-		for(int i = 1; i < n; i++){
-			
-			int temp = arr[i];
-			int j = i - 1;
-			while(j >= 0 && temp < arr[j]){
-				arr[j+1] = arr[j];
-				j--;
-			}
-			
-			arr[j+1] = temp;
-		}
+	if(arr == null || arr.length == 0){
+		System.err.println("ERROR INPUT");
+		return;
 	}
 	
-```
+	int n = arr.length;
+	
+	for(int i = 1; i < n; i++){
+		
+		int temp = arr[i];
+		int j = i - 1;
+		while(j >= 0 && temp < arr[j]){
+			arr[j+1] = arr[j];
+			j--;
+		}
+		
+		arr[j+1] = temp;
+	}
+}
+{% endhighlight %}
+
 
 #### 1.1.3 算法分析
->＊最好情况下：每次循环，内层都不需要比较，只有外层循环的常量级操作，时间复杂度为Ｏ(n)
->＊最坏情况下：内层循环每次都要比较i次，故总的执行次数是：1+2+3+...+n=n*(n-1)/2，故时间复杂度为Ｏ($n^2$)
->＊最后平均时间复杂度为：Ｏ($n^2$)
->＊空间复杂度：O(1)
+>＊最好情况下：每次循环，内层都不需要比较，只有外层循环的常量级操作，时间复杂度为$O(n)$
+>＊最坏情况下：内层循环每次都要比较i次，故总的执行次数是：1+2+3+...+n=n*(n-1)/2，故时间复杂度为$O(n^2)$
+>＊最后平均时间复杂度为：$O(n^2)$
+>＊空间复杂度：$O(1)$
 
 
 ### 1.2 ＊折半插入排序＊
@@ -54,7 +56,7 @@ public static void InsertSort(int[] arr){
 
 #### 1.2.2 代码
 
-```JAVA
+```java
 public static void halfInsertSort(int[] arr){
 		if(arr == null || arr.length == 0){
 			System.err.println("ERROR INPUT");
@@ -96,8 +98,8 @@ public static void halfInsertSort(int[] arr){
 
 #### 1.2.3 算法分析
 >*外层循环为n－１次，内层循环是折半查找，
->*最好情况是：复杂度为Ｏ($\log n$).故总的时间复杂度为Ｏ($n\log n$)；最坏情况是Ｏ($n^2$);平均情况为Ｏ($n^2$)．
->＊空间复杂度为：O(1)
+>*最好情况是：复杂度为$O(\log n)$.故总的时间复杂度为$O(n\log n)$；最坏情况是$O(n^2)$;平均情况为$O(n^2)$．
+>＊空间复杂度为：$O(1)$
 
 
 ### 1.3 ＊希尔排序（shellsort)＊
@@ -131,7 +133,7 @@ public static void halfInsertSort(int[] arr){
 
 #### 2.1.2 代码
 
-```JAVA
+```java
 public static void BubbleSort(int[] arr){
 		if(arr == null || arr.length == 0){
 			System.err.println("Error input");
@@ -160,7 +162,7 @@ public static void BubbleSort(int[] arr){
 
 #### 2.1.3 算法分析
 
->时间复杂度：最好$Ｏ(n)$最坏$O(n^2)$平均$O(n^2)$
+>时间复杂度：最好$O(n)$最坏$O(n^2)$平均$O(n^2)$
 >空间复杂度：$O(1)$
 
 ### 2.2 ＊快速排序＊
@@ -280,7 +282,7 @@ public static void QuickSort(int[] arr, int l, int r){
 
 #### 3.1.2 代码：
 
-```JAVA
+```java
 	public static void SimpleSelectSort(int[] arr){
 		
 		if(arr == null || arr.length == 0){
@@ -321,7 +323,7 @@ public static void QuickSort(int[] arr, int l, int r){
 
 #### 3.2.2 代码
 
-```JAVA
+```java
 /**
 	 * 本函数完成对在数组Ｒ[low]到Ｒ[high]范围内对在位置low上的结点进行调整
 	 * @param arr
@@ -430,8 +432,8 @@ public static void QuickSort(int[] arr, int l, int r){
 
 ## 4. 其他性质
 
- 1. 直接插入排序，初始基本有序情况下，是$Ｏ(n)$
- 2. 冒泡排序，初始基本有序情况下，是$Ｏ(n)$
+ 1. 直接插入排序，初始基本有序情况下，是$O(n)$
+ 2. 冒泡排序，初始基本有序情况下，是$O(n)$
  3. 快排在初始状态越差的情况下算法效果越好．
  4. 堆排序适合记录数量比较大的时候，从n个记录中选择k个记录．
  5. 经过一趟排序，元素可以在它最终的位置的有：交换类的（冒泡，快排），选择类的（简单选择，堆）
