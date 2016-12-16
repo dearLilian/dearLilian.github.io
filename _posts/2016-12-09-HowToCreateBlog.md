@@ -86,6 +86,7 @@ jekyll serve
 工作路径：d://lilian/dearLilian.github.io
 
 首先打开_config.yml文件。(以我的该文件为例子)，原文件内容如下：
+
 ```
 # Basic
 title: LILIAN
