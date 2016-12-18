@@ -196,7 +196,7 @@ code {
 
 pre {
   margin-bottom: 1.3em;
-  padding: 1em 2.5%;
+  padding: 1em 0.5%;
   border: 1px solid #c9e1f6;
   background: none;
   border-radius: 3px;
@@ -219,7 +219,7 @@ code.has-numbering {
   position: absolute;
   top: 0;
   left: 0;
-  width: 20px;
+  width: 10px;
   padding: 12px 2px 12px 0;
   border-right: 1px solid #C3CCD0;
   border-radius:  3px 0 0 3px;
