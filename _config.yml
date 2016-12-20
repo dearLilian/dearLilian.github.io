@@ -3,7 +3,7 @@ title: LILIAN
 subtitle: 心灵之窗
 description: 书写生活，充实自我
 # 头像里面的标题
-avatarTitle: dearLilian
+avatarTitle: 李文宝
 # 头像里面的描述
 avatarDesc: 数据挖掘 / 机器学习
 url: "http://lilian.info"
@@ -59,12 +59,11 @@ kramdown:
   enable_coderay: false
 
 
-permalink: /:year/:month/:title/
 # Format
 highlighter: rouge
 
 # supported colors: blue, green, purple, red, orange or slate. If you need clear, leave it empty.
-cover_color: clear
+#cover_color: 
 
 # The blog button should not be removed.
 blog_button:
@@ -74,11 +73,12 @@ blog_button:
 nav:
     - {title: 所有文章, description: archive, url: '/archive'}   
     - {title: 分类, description: tags, url: '/tags'}
-    - {title: 留言板, description: messages, url: '/messages'}      
+    - {title: 留言板, description: messages, url: '/messages'}
+    - {title: 资源链接, description: links, url: '/links'}      
     - {title: 关于我, description: about, url: '/about'}      
     
 
 # Pagination
 gems: [jekyll-paginate,jekyll-sitemap]
-paginate: 20
+paginate: 10
 paginate_path: "page/:num/"

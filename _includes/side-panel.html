@@ -5,14 +5,16 @@
     <div class="panel-main__inner panel-inverted">
     <div class="panel-main__content">
 
-
+        <br/>
+        <br/>
+        <br/>
         <!-- 头像效果-start -->
         <div class="ih-item circle effect right_to_left">            
             <a href="/#blog" title="前往 {{ site.title }} 的主页" class="blog-button">
                 <div class="img"><img src="/images/avatar.jpg" alt="img"></div>
                 <div class="info">
                     <div class="info-back">
-                        <h2> 
+                        <h2 class="avatarTitle"> 
                             {% if site.avatarTitle %}
                                 {{site.avatarTitle}}
                             {% endif %}
@@ -44,15 +46,17 @@
           <div>
             <nav class="cover-navigation cover-navigation--primary">
               <ul class="navigation">
+                
                 <li class="navigation__item"><a href="/#blog" title="{{site.blog_button.description}}" class="blog-button">{{site.blog_button.title}}</a></li>
+                
+                <br/>
                 {% for item in site.nav %}
-                  <li class="navigation__item"><a href="{{item.url}}" title="{{item.description}}">{{item.title}}</a></li>
+                  <li class="navigation__item"><a href="{{item.url}}" title="{{item.description}}">{{item.title}}</a></li><br/>
                 {% endfor %}
               </ul>
             </nav>
           </div>          
         </div>
-
 
         </div>
       </div>

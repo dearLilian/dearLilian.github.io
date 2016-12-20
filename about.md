@@ -1,6 +1,8 @@
 ---
 layout: page
 title: 关于我 
+header: 根据快速导航到相应的文章
+group: navigation
 ---
 
 书写生活，充实自我。

@@ -116,7 +116,11 @@ h1 {
 
 h2 {
   font-size: 1.5em; 
-  /*background:#B9D3EE;*/
+  padding: 10px 20px;
+  background: #87CEFF;
+  border-radius: 10px; 
+  box-shadow: 0px 5px 5px #828282;
+  border-left: 6px solid #8B0000; 
   /*text-align: center;*/
 }
 
@@ -204,31 +208,11 @@ pre {
   font-size: .9em;
   font-weight: normal;
   line-height: 1.3em;
-  overflow: scroll; }
+  overflow: auto; }
 pre code {
   padding: 0;
-  
   border: none;
   word-wrap: normal; }
-
-code.has-numbering {
-  margin-left: 21px;
-}
-
-.pre-numbering {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 10px;
-  padding: 12px 2px 12px 0;
-  border-right: 1px solid #C3CCD0;
-  border-radius:  3px 0 0 3px;
-
-  text-align: right;
-  font-family: Menlo, monospace;
-  font-size: 1.0em;
-
-}
 
 table {
   color: #333333;
@@ -362,7 +346,7 @@ img::-moz-selection {
   }
 
   .excerpt {
-    border-left: 3px solid #458B74; 
+    border-left: 3px solid #8B0000; 
     margin: 0;
     margin-right: 10px;
     font-size: .9em;
@@ -434,7 +418,14 @@ img::-moz-selection {
   .footer__copyright a:hover {
     color: #7b0f19; 
   }
-
+  .avatarTitle{
+    color: #FCFCFC;
+    background: none;
+    padding: 0px 0px;
+    border-radius: 0px; 
+    box-shadow: 0px 0px 0px;
+    border-left: 0px; 
+  }
   .avatar,
   .logo {
     border-radius: 50%;
@@ -581,7 +572,7 @@ img::-moz-selection {
 
   .panel-main__inner {
     display: table-cell;
-    vertical-align: middle;
+    vertical-align: top;
     position: relative;
     z-index: 800;
     padding: 0 0px; }
@@ -603,6 +594,26 @@ img::-moz-selection {
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4); }
   .panel-inverted a {
     color: #FFF; }
+
+  .search{
+    position:relative;
+    margin-top:15px;}
+  .search input{
+    padding-right:30px;}
+  .search button{
+    position:absolute;
+    right:4px;
+    top:2px;
+    border:none;
+    padding:0;
+    width:24px;
+    height:24px;
+    background:transparent url(images/Search.png) no-repeat center center;
+    direction:ltr;
+    text-indent:-9999em;
+  }
+
+
 
   .cover-navigation {
     margin-top: 0px; 
@@ -747,7 +758,9 @@ img::-moz-selection {
   .navigation__item {
     display: inline-block;
     margin-left: 0px;
-    line-height: 1em; 
+    line-height: 1em;
+    font-size: 1.5em;
+    color: #FFFFFF;
   }
 
   .navigation__item a {

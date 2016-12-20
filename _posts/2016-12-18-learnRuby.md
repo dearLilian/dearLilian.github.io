@@ -30,7 +30,7 @@ Hello, World!
 ```
 下面我们来学习ruby的一些基本语法。
 
-#### ruby打印到控制台：输出
+### ruby打印到控制台：输出
 
 ```ruby
 puts <your output>
@@ -45,7 +45,7 @@ print <your output>
 puts输出会带回车换行符，而print则不带。
 
 
-#### ruby中的Here Document
+### ruby中的Here Document
 
 ```ruby
 #ruby中的Here Document
@@ -87,7 +87,7 @@ C
 	I said C.
 ```
 
-#### ruby BEGIN语句
+### ruby BEGIN语句
 
 BEGIN语句包含的code会在程序运行之前被调用。
 
@@ -108,7 +108,7 @@ BEGIN {
 Hello, World!
 ```
 
-#### ruby END语句
+### ruby END语句
 
 END语句包含的code会在程序运行之后被调用。
 
@@ -128,7 +128,7 @@ Hello, World!
 声明code会在程序运行之后被调用
 ```
 
-#### ruby注释
+### ruby注释
 
 - 单行注释：使用```#```（与python一样的）
 
@@ -150,7 +150,7 @@ Hello, World!
 =end
 ```
 
-#### ruby数据类型
+### ruby数据类型
 
 ruby支持的数据类型包括基本的
 Number, String, Ranges, Symbols, 以及true, false和nil这几个特殊值
@@ -201,7 +201,7 @@ puts "计算表达式的值：#{24*3+2}"
 计算表达式的值：74
 ```
 
-#### 数组Array
+### 数组Array
 
 ruby的数组中可以是任意类型的，每个元素的类型不一定是一样的。
 
@@ -238,7 +238,7 @@ double = ary*2
 puts double
 ```
 
-#### 哈希类型Hash
+### 哈希类型Hash
 
 在其他语言里也学习过很多次哈希表了，是一个键值对的集合。例如：
 
@@ -257,7 +257,7 @@ green is 240
 blue is 15
 ```
 
-#### 范围类型Range
+### 范围类型Range
 
 用```s..e```来表示一个范围类型，其中```s```为起始值，```e```为结束值，得到的范围是包含```s```和```e```的。例如：
 
@@ -274,7 +274,7 @@ end
 10,11,12,13,14,15,
 ```
 
-#### ruby类和对象
+### ruby类和对象
 
 ruby是一种完美的面向对象编程语言。面向对象编程语言的特性包括：
 
@@ -355,7 +355,7 @@ cust2.sayHello
 cust2.total_no_of_customer
 ```
 
-#### ruby变量
+### ruby变量
 
 变量是持有可被任何程序使用的任何数据的存储位置
 
@@ -404,7 +404,7 @@ object.show
 - ```__FILE__```:当前源文件的名称
 - ```__LINE__```:当前行在源文件中的编号
 
-#### ruby运算符
+### ruby运算符
 
 - 常规的算术运算符：```+,-,*,/,%,**(乘方)```
 - 常规的比较运算符：```==, !=, >, <, >=, <=, <=>(联合比较运算符), ===, .eql?(内容相同), equal?```
@@ -453,7 +453,7 @@ defined? yield    # => nil（如果未传递块）
 如果未使用前缀表达式，则默认使用主 Object 类。
 
 
-#### ruby判断
+### ruby判断
 
 - ```if...else```语句
 
@@ -592,7 +592,7 @@ end
 # 显示 "bar is true"
 ```
 
-#### ruby循环
+### ruby循环
 
 - while语句
 
@@ -681,4 +681,393 @@ rescue
 end
 ```
 
-#### ruby方法
+### ruby方法
+
+ruby方法即函数。与python中的函数语法类似。
+
+```ruby
+def method_name [([arg[=default]]...[,*arg [, &expr]])]
+	expr
+end
+```
+
+首先是如何定义函数：def开头，end结尾。
+其次是函数的参数：可以无参数（括号也可以省去）,也可以是多个参数，也可以是不定长参数。
+
+例如：
+
+```ruby
+#无参函数
+def sayHello
+	puts "Hello."
+end
+
+#调用无参函数
+sayHello
+
+#有参函数
+def sum (a, b)
+	a + b  #函数的返回值是函数中最后一个表达式的值
+end
+
+#调用
+c = sum 10, 20  #调用函数时，直接在函数名后面写参数
+
+#不定长参数
+def test (*args)
+	puts "参数长度为：#{args.length}"
+	args.each do |i|
+		puts i
+	end
+end
+
+#调用
+test "a",3, true
+```
+
+函数的返回：
+
+- 返回一个值：可以直接用最后一个表达式的值为函数的返回值
+- 返回多个值：用return语句来返回（类似python中的return）。如果给出超过两个的表达式，包含这些值的数组将是返回值。如果未给出表达式，nil 将是返回值。
+
+
+### 类方法
+
+当方法定义在类的外部，方法默认标记为```private```,另一方面，如果方法定义在类中，则默认标记为```public```。
+
+当想要访问类的方法时，首先需要实例化类。然后，使用对象，就可以访问类的任何成员。
+
+另外一种（类似java中的静态方法），即不用实例化类即可访问方法的方式。在ruby中是这样声明的：
+
+```ruby
+class Account
+	def reading_charge
+		code 
+	end
+
+	def Account.return_date
+		code 
+	end
+end
+```
+即在类名后跟一个点号，然后再加方法名来声明。这样我们可以直接用类名来访问类方法：
+
+```ruby 
+Account.return_date
+```
+
+### ruby <i>alias</i>语句
+
+这个语句用于为方法或全局变量起别名。别名不能在方法主体内定义。即使方法被重写，方法的别名也保持方法的当前定义。
+
+为编号的全局变量起别名是被禁止的。
+
+```ruby
+alias new_method_name original_method_name
+alias new_global_variable original_global_variable
+```
+
+### ruby <i>undef</i>语句
+
+这个语句用于取消方法定义。<i>undef</i>不能出现在方法主体内。
+
+通过使用<i>undef</i>和<i>alias</i>，类的接口可以从父类独立修改。
+
+```ruby
+undef 方法名
+```
+
+### ruby块
+
+类似与方法，ruby有一个块的概念。
+
+- 块由大量的代码组成
+- 您需要给块取个名称
+- 块中的代码总是包含在大括号{}内
+- 块总是从与其具有相同名称的函数调用。这意味着如果您的块名称为```test```,那么您要使用函数```test```来调用这个块。
+- 您可以使用```yield```语句来调用块。
+
+```ruby
+block_name {
+	statement1
+	statement2
+	..........
+}
+```
+
+下面是相应的声明实例与调用
+
+```ruby
+#!/usr/bin/env ruby
+
+def test
+	puts "在 test 方法内"
+	yield
+	puts "你又回到了test方法内"
+	yield
+end
+
+test {
+	puts "你在test块内"
+}
+```
+
+输出：
+
+```ruby
+在 test 方法内
+你在test块内
+你又回到了test方法内
+你在test块内
+```
+
+```yield```还可以传递带有参数的语句。
+
+```ruby
+def test2
+	yield 5
+	puts "in the function test"
+	yield 10
+end
+
+test2 {
+	|i| puts "in the block #{i}"
+}
+```
+
+输出：
+
+```ruby
+in the block 5
+in the function test
+in the block 10
+```
+
+当然也可以传递多个参数，例如：
+
+```ruby
+def test2
+	yield 5, 25
+	puts "in the function test"
+	yield 10,100
+end
+
+test2 {
+	|a, b| puts "in the block #{a+b}"
+}
+```
+
+上述显然说明了方法与块之间的关系。
+
+另外：如果方法最后一个参数前带有```&```，那么我们可以向该方法传递一个块，且这个块可被赋给最后一个参数。如果```*```和```&```同时出现在参数列表中，```&```应放在后面。
+
+```ruby
+def test(&block)
+	block.call
+end
+test { puts "Hello, World!"}
+```
+
+最后就是我们之前介绍过的BEGIN和END块。一个程序中可以有多个BEGIN块以及END块。其中BEGIN块按照出现的顺序执行，END块按照他们出现的相反顺序执行。
+
+### ruby模块(Module)
+
+模块是一种把方法、类和常量组合在一起的方式。模块提供两大好处。
+
+- 模块提供了一个命名空间和避免名字冲突
+- 模块实现了mixin装置
+
+模块类似于类，但有以下不同：
+
+- 模块不能实例化
+- 模块没有子类
+- 模块只能被另一个模块定义
+
+语法：
+
+```ruby
+module Identifier
+	statement1
+	statement2
+	..........
+end
+```
+
+使用模块名.方法名来调用模块方法，模块名::常量引用模块中的常量。
+
+不同的模块中可以定义相同名称的函数（功能不同）
+
+
+### ruby require语句
+
+类似c与c++中的include语句以及java中的import语句。如果一个第三方的程序想要使用任何已定义的模块，则可以简单地使用require来加载模块文件：
+
+```ruby
+require filename
+```
+
+在文件开头使用```$LOAD_PATH << '.' ```让ruby知道必须在当前目录中搜索被引用的文件。
+
+
+#### include语句
+
+在类中嵌入模块时，需要在类中使用include语句
+
+```ruby
+include modulename
+```
+
+例如：
+
+```ruby
+#!/usr/bin/env ruby
+
+
+module Week
+	FIRST_DAY = "Sunday"
+	def Week.weeks_in_month
+		puts "You have four weeks in a month"
+	end
+
+	def Week.weeks_in_year
+		puts "You have 52 weeks in a year"
+	end
+end
+```
+
+将该文件存储命名为support.rb。
+
+然后在下面文件中引用。
+
+```ruby
+#!/usr/bin/env ruby
+$LOAD_PATH << '.' 
+
+require "support"
+
+class Decade
+include Week
+	no_of_yrs = 10
+	def no_of_months
+		puts Week::FIRST_DAY
+		number = 10*12
+		puts number
+	end
+end
+
+d1 = Decade.new
+puts Week::FIRST_DAY
+Week.weeks_in_month
+Week.weeks_in_year
+d1.no_of_months
+```
+
+
+### ruby中的Mixins
+
+ruby不支持多重集成，但是ruby的模块有一个神奇的功能。它几乎消除了多重继承的需要，提供了一种名为Mixin的装置。
+
+ruby的类通过include多个module可以间接的实现了多重继承，模块中的方法到可以被类调用。
+
+实例：
+
+```ruby
+module A
+   def a1
+   end
+   def a2
+   end
+end
+module B
+   def b1
+   end
+   def b2
+   end
+end
+ 
+class Sample
+include A
+include B
+   def s1
+   end
+end
+ 
+samp=Sample.new
+samp.a1
+samp.a2
+samp.b1
+samp.b2
+samp.s1
+```
+
+- 模块 A 由方法 a1 和 a2 组成。
+- 模块 B 由方法 b1 和 b2 组成。
+- 类 Sample 包含了模块 A 和 B。
+- 类 Sample 可以访问所有四个方法，即 a1、a2、b1 和 b2。
+
+因此，可以看到类 Sample 继承了两个模块，您可以说类 Sample 使用了多重继承或 mixin 。
+
+### ruby字符串(String)
+
+ruby字符串分为单引号字符串和双引号字符串，区别在于后者支持更多的转义字符。
+
+关于字符串的一般内容如：转义字符，字符编码等类似于其他语言。
+
+ruby的string特性有：在双引号字符串中可以使用#{表达式}来计算表达式的值。
+
+除此之外就是String的内建方法。
+
+- 实例化String对象：
+
+```ruby
+myStr = String.new("THIS IS TEST")
+foo = myStr.downcase
+
+puts "#{foo}"	#=>this is test
+```
+- str % arg
+- str * integer:重复integer次，返回新字符串
+- str + other_str:连接字符串
+- str << obj:连接对象到字符串
+- str <=>other_str:
+- ...
+
+
+### ruby数组(Array)
+
+#### 初始化方式：
+
+- ```Array.new(length)```
+- ```Array.new(length, 初始值)```
+- ```Array.[](...)```
+- ```Array[...]```
+- ```[...]```
+
+#### 常用方法：
+
+- & other_array
+- * int
+- * str:返回一个字符串
+- + other_array
+- [index]
+- at(index)
+- delete_at(index)
+- insert(index, obj)
+- length
+- index(obj)
+- size
+- pop
+- push(obj)
+- reverse
+- sort
+- transpose (转置)数组的数组时使用
+- ...
+
+### ruby 哈希(Hash)
+
+哈希的元素没有特定的顺序。
+
+#### 创建哈希
+
+- Hash.new
+- Hash.new 默认值
