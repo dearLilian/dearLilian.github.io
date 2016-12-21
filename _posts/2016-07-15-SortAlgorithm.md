@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 数据结构之排序算法
+title: 数据结构之排序算法(java)
 date: 2016-07-15 
 tag: 数据结构
 ---
