@@ -8,21 +8,35 @@ group: navigation
 
 本块主要内容是一些有用的网上资源及大牛人物们。
 
+## my personal links
+
+- <a href="https://sites.google.com/site/liliandreamworld/">my google sites</a>
+- <a href="http://dm.uestc.edu.cn/wenbao-li/">my lab site</a>
+- <a href="http://blog.csdn.net/lilianforever">my csdn blog site</a>
+
+## 偶然一撇
+
+- <a href="https://keras.io/">keras</a>
+- <a href="http://snap.stanford.edu/index.html">SNAP</a>
+- <a href="http://scikit-learn.org/stable/">scikit-learn</a>
+- <a href="http://www.scipy.org/docs.html">SciPy</a>:open-source software for mathematics, science, and engineering
+- <a href="https://docs.scipy.org/doc/numpy/">NumPy</a>
+- <a href="http://matplotlib.org/contents.html">Matplotlib<a>
+- <a href="http://pandas.pydata.org/pandas-docs/stable/">Pandas</a>:powerful Python data analysis toolkit
+- <a href="http://docs.sympy.org/latest/index.html">SymPy</a>:a Python library for symbolic mathematics
+
 ## 牛人一览
 
 <br/>
 
-### 大牛们
 
 - 韩家伟
 - <a href="http://cs.stanford.edu/people/jure/index.html">Jure Leskovec.</a>：大帅哥一枚
-- <a href="">Yizhou Sun</a>
-
-- <a href="">唐杰</a>
-
-### 小妞们
-
+- <a href="http://web.cs.ucla.edu/~yzsun/">Yizhou Sun</a>
+- <a href=""
+- <a href="http://keg.cs.tsinghua.edu.cn/jietang/">唐杰</a>
 - <a href="">邵俊明</a>
+- <a href="http://blog.csdn.net/v_JULY_v/">CSDN结构之法 v_JULY_v<a/>
 
 
 ## 数据挖掘资源(引用自<a href="dm.uestc.edu.cn">DM Lab</a>)

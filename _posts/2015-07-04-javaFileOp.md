@@ -5,6 +5,14 @@ date: 2015-07-04
 tag: 语言
 ---
 
+
+
+## 目录
+
+* TOC 
+{:toc}
+
+
 本文转自<a href="http://blog.csdn.net/lilianforever/article/details/46724827">我的CSDN博客</a>。
 
 ## 一、前言

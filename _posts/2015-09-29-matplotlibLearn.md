@@ -5,6 +5,14 @@ date: 2015-09-29
 tag: 语言
 ---
 
+
+## 目录
+
+* TOC 
+{:toc}
+
+
+
 本文转自<a href="http://blog.csdn.net/lilianforever/article/details/52163370">我的CSDN博客</a>。
 
 前言：matplotlib是一个python的第三方库，里面的pyplot可以用来作图。下面来学习一下如何使用它的资源。
