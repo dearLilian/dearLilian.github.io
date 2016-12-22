@@ -33,7 +33,6 @@ group: navigation
 - 韩家伟
 - <a href="http://cs.stanford.edu/people/jure/index.html">Jure Leskovec.</a>：大帅哥一枚
 - <a href="http://web.cs.ucla.edu/~yzsun/">Yizhou Sun</a>
-- <a href=""
 - <a href="http://keg.cs.tsinghua.edu.cn/jietang/">唐杰</a>
 - <a href="">邵俊明</a>
 - <a href="http://blog.csdn.net/v_JULY_v/">CSDN结构之法 v_JULY_v<a/>

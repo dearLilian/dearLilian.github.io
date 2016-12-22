@@ -5,8 +5,6 @@ date: 2016-12-18
 tag: 语言
 ---
 
-
-
 ## 目录
 
 * TOC 
@@ -14,7 +12,9 @@ tag: 语言
 
 
 
+
 ### ruby简介
+
 
 ruby是一种纯粹的面向对象编程语言。它由日本的松本行弘（まつもとゆきひろ/Yukihiro Matsumoto）创建于1993年。
 您可以在 www.ruby-lang.org 的 ruby 邮件列表上找到松本行弘（まつもとゆきひろ/Yukihiro Matsumoto）的名字。在 ruby 社区，松本也被称为马茨（Matz）。
