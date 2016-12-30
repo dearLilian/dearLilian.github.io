@@ -2,7 +2,7 @@
 layout: post
 title: UESTCthesis模板使用（持续更新）
 date: 2016-12-30
-tag: latex
+tag: Latex
 ---
 
 * TOC 
@@ -63,6 +63,3 @@ UESTCthesis latex模板是时富军同学为了方便UESTCer们写毕业论文�
 ### 修改参考文件在文中的格式[数字]上标的形式
 
 打开```uestcthesis.cls```文件，查找natbib，即该宏包被引用的那一行命令，然后在选项上（[]里）添加super,square。表示使用方括号与上标显示。
-
-
-### 
