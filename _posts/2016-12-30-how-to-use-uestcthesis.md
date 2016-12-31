@@ -48,7 +48,7 @@ UESTCthesis latex模板是时富军同学为了方便UESTCer们写毕业论文�
 
 ## 问题集锦
 
-### 如何添加新的宏包
+### 如何添加新的宏包？
 
 对于一般的latex编辑，我们通常是在文件的documentclass声明与begin{document}声明之间使用usepackage命令引用所需要的宏包。
 然而在该模板中，使用宏包的命令是在uestcthesis.cls文件中声明的。使用如下方式：
@@ -60,6 +60,15 @@ UESTCthesis latex模板是时富军同学为了方便UESTCer们写毕业论文�
 如果需要重新定义宏包中的环境或选项，则在对应的宏包声明下面使用命令```renewcommand```。
 
 
-### 修改参考文件在文中的格式[数字]上标的形式
+### 如何设置参考文献引用为上标格式？
 
 打开```uestcthesis.cls```文件，查找natbib，即该宏包被引用的那一行命令，然后在选项上（[]里）添加super,square。表示使用方括号与上标显示。
+
+更多设置可参考：<a href="http://blog.sina.com.cn/s/blog_5e16f1770100lqh2.html">LaTeX技巧355：natbib宏包使用说明中文版</a>
+
+
+### 如何使用algorithm2e包编写算法伪代码？
+
+参考<a href="http://blog.sina.com.cn/s/blog_5e16f1770100lp7u.html">http://blog.sina.com.cn/s/blog_5e16f1770100lp7u.html</a>
+
+
