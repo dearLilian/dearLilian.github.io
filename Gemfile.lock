@@ -45,6 +45,7 @@ GEM
     rouge (1.11.1)
     safe_yaml (1.0.4)
     sass (3.4.22)
+    wdm (0.1.1)
 
 PLATFORMS
   x64-mingw32
@@ -58,6 +59,7 @@ DEPENDENCIES
   rdiscount
   redcarpet
   rouge
+  wdm (>= 0.1.0)
 
 RUBY VERSION
    ruby 2.3.3p222
