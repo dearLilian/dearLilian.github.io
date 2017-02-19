@@ -8,13 +8,15 @@ group: navigation
 
 本块主要内容是一些有用的网上资源及大牛人物们。
 
-## my personal links
+## 个人相关链接
 
 - <a href="https://sites.google.com/site/liliandreamworld/">my google sites</a>
 - <a href="http://dm.uestc.edu.cn/wenbao-li/">my lab site</a>
 - <a href="http://blog.csdn.net/lilianforever">my csdn blog site</a>
 
 ## 偶然一撇
+
+<br/>
 
 - <a href="https://keras.io/">keras</a>
 - <a href="http://snap.stanford.edu/index.html">SNAP</a>
@@ -29,14 +31,15 @@ group: navigation
 
 <br/>
 
-
-- 韩家伟
 - <a href="http://cs.stanford.edu/people/jure/index.html">Jure Leskovec.</a>：大帅哥一枚
 - <a href="http://web.cs.ucla.edu/~yzsun/">Yizhou Sun</a>
 - <a href="http://keg.cs.tsinghua.edu.cn/jietang/">唐杰</a>
 - <a href="">邵俊明</a>
 - <a href="http://blog.csdn.net/v_JULY_v/">CSDN结构之法 v_JULY_v<a/>
 
+## 其他
+
+- <a href="https://github.com/grahamjenson/list_of_recommender_systems">推荐系统的一些资源列表</a>
 
 ## 数据挖掘资源(引用自<a href="dm.uestc.edu.cn">DM Lab</a>)
 
