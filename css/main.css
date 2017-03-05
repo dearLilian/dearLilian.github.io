@@ -256,6 +256,7 @@ td:last-child {
   margin-top: 20px;
   width:48%
 }
+
 .next{
   margin-top: 20px;
   float:right
@@ -1847,3 +1848,11 @@ ul.ztree.zTreeDragUL {margin:0; padding:0; position:absolute; width:auto; height
   background:none;
 }*/
 
+
+/*
+.post-title{
+  background: #87CEFF;
+  border-radius: 10px; 
+  box-shadow: 0px 5px 5px #828282;
+  border-left: 6px solid #8B0000; 
+}*/

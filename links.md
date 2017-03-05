@@ -10,10 +10,13 @@ group: navigation
 
 ## 个人相关链接
 
-- <a href="https://sites.google.com/site/liliandreamworld/">my google sites</a>
 - <a href="http://dm.uestc.edu.cn/wenbao-li/">my lab site</a>
 - <a href="http://blog.csdn.net/lilianforever">my csdn blog site</a>
 
+## 日语
+
+- <a href="http://mp.weixin.qq.com/s/TM6UAij7ib7AlRVEACEqqg">综合日语微信公开课karin老师主讲</a>
+- <a href="http://blog.sina.com.cn/zongheriyu">综合日语微博</a>
 ## 偶然一撇
 
 <br/>
@@ -31,16 +34,19 @@ group: navigation
 
 <br/>
 
-- <a href="http://cs.stanford.edu/people/jure/index.html">Jure Leskovec.</a>：大帅哥一枚
+- <a href="http://cs.stanford.edu/people/jure/index.html">Jure Leskovec.</a>
 - <a href="http://web.cs.ucla.edu/~yzsun/">Yizhou Sun</a>
 - <a href="http://keg.cs.tsinghua.edu.cn/jietang/">唐杰</a>
-- <a href="">邵俊明</a>
+- <a href="http://dm.uestc.edu.cn">邵俊明</a>
 - <a href="http://blog.csdn.net/v_JULY_v/">CSDN结构之法 v_JULY_v<a/>
 
 ## 其他
 
 - <a href="https://github.com/grahamjenson/list_of_recommender_systems">推荐系统的一些资源列表</a>
-
+- <a href="https://github.com/NicolasHug/Surprise">推荐系统算法python库Surprise</a>
+- <a href="http://www.librec.net/datasets.html">推荐系统常用数据集</a>
+- <a href="http://www.ctan.org/tex-archive/support/excel2latex">excel表格转latex代码的工具</a>
+- <a href="http://smiles.xjtu.edu.cn/Download/Download.html">SMILEE LAB的数据集列表：豆瓣数据集，多媒体数据集等</a>
 ## 数据挖掘资源(引用自<a href="dm.uestc.edu.cn">DM Lab</a>)
 
 <br/>
