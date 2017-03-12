@@ -44,7 +44,7 @@ GEM
     redcarpet (3.3.4)
     rouge (1.11.1)
     safe_yaml (1.0.4)
-    sass (3.4.22)
+    sass (3.4.23)
     wdm (0.1.1)
 
 PLATFORMS
@@ -65,4 +65,4 @@ RUBY VERSION
    ruby 2.3.3p222
 
 BUNDLED WITH
-   1.13.6
+   1.14.6
