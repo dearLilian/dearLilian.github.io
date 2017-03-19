@@ -18,7 +18,11 @@ group: navigation
 - <a href="http://blog.csdn.net/lilianforever">my csdn blog site</a>
 
 
+### 会议网址
 
+- <a href="http://www.kdd.org/conferences">KDD conferences list</a>：数据挖掘顶级会议
+- <a href="https://recsys.acm.org/">RecSys</a>：推荐系统会议
+- <a href="https://www.edbt.org/#conferences">EDBT</a>:数据库会议
 
 ## 日语
 
