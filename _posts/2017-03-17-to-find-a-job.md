@@ -31,419 +31,50 @@ tag: 面经
 
 <table>
    <tr>
-      <th>公司</th>
-      <th>类型</th>
-      <th>结果</th>
-      <th>岗位</th>
-      <th>时间</th>
-   </tr>
-   <tr>
-      <td>锐捷</td>
-      <td>内推</td>
-      <td>池子里没捞起来（二面挂）</td>
-      <td></td>
-      <td>6月底</td>
-   </tr>
-   <tr>
-      <td>锐捷</td>
-      <td>校招</td>
-      <td>笔试挂</td>
-      <td></td>
-      <td></td>
-   </tr>
-   <tr>
-      <td>海康</td>
-      <td>内推</td>
-      <td>简历挂</td>
-      <td></td>
-      <td></td>
-   </tr>
-   <tr>
-      <td>海康</td>
-      <td>校招</td>
-      <td>简历挂？</td>
-      <td></td>
-      <td></td>
-   </tr>
-   <tr>
-      <td>tap4fun</td>
-      <td>内推</td>
-      <td>一面挂</td>
-      <td></td>
-      <td></td>
-   </tr>
-   <tr>
-      <td>金网安泰</td>
-      <td>内推</td>
-      <td>一面通过实习</td>
-      <td>JAVA开发</td>
-      <td></td>
-   </tr>
-   <tr>
-      <td>360</td>
-      <td>内推</td>
-      <td>简历挂</td>
-      <td></td>
-      <td></td>
-   </tr>
-   <tr>
-      <td>拼多多</td>
-      <td>内推</td>
-      <td>简历挂</td>
-      <td></td>
-      <td></td>
-   </tr>
-   <tr>
-      <td>4399</td>
-      <td>内推</td>
-      <td>简历挂</td>
-      <td></td>
-      <td></td>
-   </tr>
-   <tr>
-      <td>房多多</td>
-      <td>内推</td>
-      <td>简历挂 </td>
-      <td></td>
-      <td></td>
-   </tr>
-   <tr>
-      <td>腾讯</td>
-      <td>内推</td>
-      <td>简历挂</td>
-      <td></td>
-      <td></td>
-   </tr>
-   <tr>
-      <td>饿了么</td>
-      <td>内推</td>
-      <td>简历挂</td>
-      <td></td>
-      <td></td>
-   </tr>
-   <tr>
-      <td>爱奇艺</td>
-      <td>内推</td>
-      <td>简历挂</td>
-      <td></td>
-      <td></td>
-   </tr>
-   <tr>
-      <td>招银</td>
-      <td>内推</td>
-      <td>简历挂</td>
-      <td></td>
-      <td></td>
-   </tr>
-   <tr>
-      <td>招银</td>
-      <td>校招</td>
-      <td>笔试挂</td>
-      <td></td>
-      <td></td>
-   </tr>
-   <tr>
-      <td>滴滴</td>
-      <td>内推</td>
-      <td>简历挂</td>
-      <td></td>
-      <td></td>
-   </tr>
-   <tr>
-      <td>同程</td>
-      <td>内推</td>
-      <td>简历挂</td>
-      <td></td>
-      <td></td>
-   </tr>
-   <tr>
-      <td>百度</td>
-      <td>内推</td>
-      <td>一面挂</td>
-      <td></td>
-      <td></td>
-   </tr>
-   <tr>
-      <td>远景能源</td>
-      <td>内推</td>
-      <td>一面挂</td>
-      <td></td>
-      <td></td>
-   </tr>
-   <tr>
-      <td>猫眼</td>
-      <td>内推</td>
-      <td>简历挂</td>
-      <td></td>
-      <td></td>
-   </tr>
-   <tr>
-      <td>美团</td>
-      <td>内推</td>
-      <td>笔试挂</td>
-      <td></td>
-      <td></td>
-   </tr>
-   <tr>
-      <td>美团</td>
-      <td>校招</td>
-      <td>笔试没做（估计也是个挂）</td>
-      <td></td>
-      <td></td>
-   </tr>
-   <tr>
-      <td>YY</td>
-      <td>内推</td>
-      <td>简历挂</td>
-      <td></td>
-      <td></td>
-   </tr>
-   <tr>
-      <td>搜狗</td>
-      <td>内推</td>
-      <td>简历挂</td>
-      <td></td>
-      <td></td>
-   </tr>
-   <tr>
-      <td>搜狗</td>
-      <td>校招</td>
-      <td>笔试挂</td>
-      <td></td>
-      <td></td>
-   </tr>
-   <tr>
-      <td>猿题库</td>
-      <td>内推</td>
-      <td>笔试挂</td>
-      <td></td>
-      <td></td>
-   </tr>
-   <tr>
-      <td>猎豹移动</td>
-      <td>内推</td>
-      <td>简历挂</td>
-      <td></td>
-      <td></td>
-   </tr>
-   <tr>
-      <td>中移动物联网</td>
-      <td>内推</td>
-      <td>笔试挂</td>
-      <td>JAVA开发</td>
-      <td></td>
-   </tr>
-   <tr>
-      <td>博雅诚信</td>
-      <td>内推</td>
-      <td>一面挂</td>
-      <td></td>
-      <td></td>
-   </tr>
-   <tr>
-      <td>蘑菇街</td>
-      <td>内推</td>
-      <td>一面挂</td>
-      <td></td>
-      <td></td>
-   </tr>
-   <tr>
-      <td>京东</td>
-      <td>内推</td>
-      <td>简历挂</td>
-      <td></td>
-      <td></td>
-   </tr>
-   <tr>
-      <td>搜狐</td>
-      <td>校招</td>
-      <td>一面挂</td>
-      <td></td>
-      <td></td>
-   </tr>
-   <tr>
-      <td>阿里</td>
-      <td>内推</td>
-      <td>一面挂</td>
-      <td></td>
-      <td></td>
-   </tr>
-   <tr>
-      <td>华为</td>
-      <td>提前批</td>
-      <td>通过拿到offer</td>
-      <td>大数据工程师</td>
-      <td>9月15</td>
-   </tr>
-   <tr>
-      <td>蓝景</td>
-      <td>内推</td>
-      <td>一面挂</td>
-      <td></td>
-      <td></td>
-   </tr>
-   <tr>
-      <td>好未来</td>
-      <td>内推</td>
-      <td>简历挂</td>
-      <td></td>
-      <td></td>
-   </tr>
-   <tr>
-      <td>好未来</td>
-      <td>校招</td>
-      <td>面试没去？还是笔试没过来着</td>
-      <td></td>
-      <td></td>
-   </tr>
-   <tr>
-      <td>滴滴</td>
-      <td>校招</td>
-      <td>2面过，要简历，放弃了</td>
-      <td></td>
-      <td></td>
-   </tr>
-   <tr>
-      <td>百度</td>
-      <td>校招</td>
-      <td>通过拿到offer</td>
-      <td></td>
-      <td>9月28</td>
-   </tr>
-   <tr>
-      <td>亚信联创</td>
-      <td>实习</td>
-      <td>通过拿到offer</td>
-      <td>技术培训生</td>
-      <td>8月4</td>
-   </tr>
-   <tr>
-      <td>七牛</td>
-      <td>内推</td>
-      <td>简历挂</td>
-      <td></td>
-      <td></td>
-   </tr>
-   <tr>
-      <td>724</td>
-      <td>校招</td>
-      <td>一面挂</td>
-      <td></td>
-      <td></td>
-   </tr>
-   <tr>
-      <td>微店</td>
-      <td>内推</td>
-      <td>一面挂</td>
-      <td></td>
-      <td></td>
-   </tr>
-   <tr>
-      <td>金蝶</td>
-      <td>内推</td>
-      <td>笔试挂</td>
-      <td>数据方面的岗位</td>
-      <td></td>
-   </tr>
-   <tr>
-      <td>京东</td>
-      <td>校招</td>
-      <td>笔试挂</td>
-      <td></td>
-      <td></td>
-   </tr>
-   <tr>
-      <td>网易</td>
-      <td>内推</td>
-      <td>笔试挂</td>
-      <td></td>
-      <td></td>
-   </tr>
-   <tr>
-      <td>网易</td>
-      <td>校招</td>
-      <td>笔试挂</td>
-      <td></td>
-      <td></td>
-   </tr>
-   <tr>
-      <td>搜狗</td>
-      <td>校招</td>
-      <td>笔试挂</td>
-      <td></td>
-      <td></td>
-   </tr>
-   <tr>
-      <td>腾讯</td>
-      <td>校招</td>
-      <td>笔试挂</td>
-      <td></td>
-      <td></td>
-   </tr>
-   <tr>
-      <td>阿里</td>
-      <td>校招</td>
-      <td>笔试没做（估计也是个挂）</td>
-      <td></td>
-      <td></td>
-   </tr>
-   <tr>
-      <td>中兴</td>
-      <td>校招</td>
-      <td>通过拿到offer</td>
-      <td></td>
-      <td>10月8号</td>
-   </tr>
-   <tr>
-      <td>大疆</td>
-      <td>校招</td>
-      <td>笔试挂</td>
-      <td></td>
-      <td></td>
-   </tr>
-</table>
-
-除了上面这些还投了很多其他的：去哪儿，头条，乐视，新浪，迅雷。有些悲剧，有些没去面试。
-
-统计结果：
-
-<table>
-   <tr>
       <th>统计</th>
       <th>累计数</th>
       <th>比率</th>
+      <th>公司</th>
    </tr>
    <tr>
       <td>共投简历累积</td>
       <td>52</td>
+      <td></td>
       <td></td>
    </tr>
    <tr>
       <td>简历挂</td>
       <td>19</td>
       <td>36.0%</td>
+      <td>海康威视，360，拼多多，房多多，腾讯，饿了么，爱奇艺，招银，滴滴，同程，猫眼，猎豹移动，京东，好未来，七牛等</td>
    </tr>
    <tr>
       <td>笔试挂</td>
       <td>13</td>
       <td>25.0%</td>
+      <td>锐捷，招银，美团，搜狗，猿题库，金蝶，京东，网易，腾讯，阿里等</td>
    </tr>
    <tr>
       <td>一面挂</td>
       <td>10</td>
       <td>19.0%</td>
+      <td>tap4fun，百度实习，搜狐，阿里内推，蘑菇街内推，远景能源，蓝景，724所，微店，</td>
    </tr>
    <tr>
       <td>二面挂</td>
       <td>1</td>
       <td>1.9%</td>
+      <td>锐捷提前批，滴滴校招（放弃）</td>
    </tr>
    <tr>
       <td>通过</td>
       <td>4</td>
       <td>7.6%</td>
+      <td>华为，百度，中兴，亚信，金网安泰</td>
    </tr>
 </table>
+
+除了上面这些还投了很多其他的：去哪儿，头条，乐视，新浪，迅雷。有些悲剧，有些没去面试。
 
 当然投的简历远不至于此，所以统计数据实际是比这个更低些的，从以上统计得出，第一投简历要海投起来，第二要脸皮厚起来，有时候该霸面的时候机会也抓紧。
 ## 秋招的关键时间段（针对互联网行业）
