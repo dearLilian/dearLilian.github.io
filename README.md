@@ -1,4 +1,4 @@
 # dearLilian.github.io
 My personal blog
 
-<a href="www.lilian.info">lilian.info</a>
+<a href="http://lilian.info">lilian.info</a>
