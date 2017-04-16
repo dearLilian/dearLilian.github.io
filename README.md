@@ -11,5 +11,6 @@ add three posts which are
 - git-on-linux
 - install-svn-on-linux
 - uget-on-linux
-
+- sublime-on-linux
+- java-on-linux
 
