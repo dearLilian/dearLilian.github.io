@@ -1,4 +1,4 @@
-----
+---
 layout: post
 title: linux下的svn客户端安装配置
 date: 2017-04-16
@@ -7,9 +7,10 @@ tags: linux
 
 
 
-<h1> 目录 </h1>
+目录
 
-[TOC]
+* TOC 
+{:toc}
 
 ## svn客户端安装配置
 

@@ -1,15 +1,14 @@
-----
+---
 layout: post
 title: linux下的git配置
 date: 2017-04-16
-tags: linux
+tag: linux
 ---
 
+ 目录
 
-
-<h1> 目录 </h1>
-
-[TOC]
+* TOC 
+{:toc}
 
 ## git配置
 
