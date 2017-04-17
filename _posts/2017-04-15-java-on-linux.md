@@ -23,6 +23,7 @@ tag: linux
 
 ```shell
 cd /home/Downloads
+
 ```
 
 - 首先解压上述的文件，命令为
