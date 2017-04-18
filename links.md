@@ -10,6 +10,8 @@ group: navigation
 
 ## 一些工具
 
+- <a href="http://wiki.ubuntu.org.cn/Qref/Apps">linux软件列表</a>：很全啊。
+- <a href="http://www.jianshu.com/p/4adbfd83b29f">Linux平台常用软件总结（Ubuntu版)</a>
 - <a href="http://pressbin.com/tools/excel_to_html_table/index.html">excel表格转html</a>
 
 ## 个人相关链接
@@ -29,7 +31,7 @@ group: navigation
 - <a href="http://mp.weixin.qq.com/s/TM6UAij7ib7AlRVEACEqqg">综合日语微信公开课karin老师主讲</a>
 - <a href="http://blog.sina.com.cn/zongheriyu">综合日语微博</a>
 
-## 偶然一撇
+## python常用库
 
 <br/>
 
@@ -59,8 +61,6 @@ group: navigation
 - <a href="http://www.librec.net/datasets.html">推荐系统常用数据集</a>
 - <a href="http://www.ctan.org/tex-archive/support/excel2latex">excel表格转latex代码的工具</a>
 - <a href="http://smiles.xjtu.edu.cn/Download/Download.html">SMILEE LAB的数据集列表：豆瓣数据集，多媒体数据集等</a>
-
-
 - <a href="https://github.com/tangjianpku/LINE">Information Network Embedding</a>
 
 ## 数据挖掘资源(引用自<a href="dm.uestc.edu.cn">DM Lab</a>)

@@ -19,7 +19,24 @@
         })();
     </script>
     <noscript>要查看<a href="http://disqus.com/?ref_noscript"> Disqus </a>评论，请启用 JavaScript</noscript>
-    
+   
+{% elsif site.comment.gitment %}
+   <div id="container"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  id: '{{ page.url }}', // 可选。默认为 location.href
+  owner: 'dearLilian',
+  repo: 'https://github.com/dearLilian/dearLilian.github.io',
+  oauth: {
+    client_id: '581bd96523e3f5c2eff6',
+    client_secret: '6ae18be198d13f2a5d023c71effddddfd48b107a',
+  },
+})
+gitment.render('container')
+</script>
+
   {% elsif site.comment.duoshuo %}
     <div class="ds-thread" data-thread-key="{{ page.url }}" data-title="{{ page.title }}" data-url="{{ page.url | prepend: site.baseurl | prepend: site.url }}"></div>
 

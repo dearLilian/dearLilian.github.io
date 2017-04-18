@@ -201,3 +201,9 @@ svn commit -m "LogMessage" /home/wenbao/svn/network/liwenbao/test.txt
 
 
 网速太差，每次都提交不动。
+
+
+
+## linux下安装Rapidsvn来管理svn
+
+参考：[Ubuntu 16.04下安装RapidSVN版本控制器及配置](http://www.linuxidc.com/Linux/2017-03/142300.htm)
