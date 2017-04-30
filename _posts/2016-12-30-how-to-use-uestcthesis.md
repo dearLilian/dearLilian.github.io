@@ -59,6 +59,7 @@ UESTCthesis latex模板是时富军同学为了方便UESTCer们写毕业论文�
 
 如果需要重新定义宏包中的环境或选项，则在对应的宏包声明下面使用命令```renewcommand```。
 
+更新：后来发现不是必须要这样。像一般的直接放在主文件的导言区就可以了。
 
 ### 如何设置参考文献引用为上标格式？
 
@@ -70,5 +71,12 @@ UESTCthesis latex模板是时富军同学为了方便UESTCer们写毕业论文�
 ### 如何使用algorithm2e包编写算法伪代码？
 
 参考<a href="http://blog.sina.com.cn/s/blog_5e16f1770100lp7u.html">http://blog.sina.com.cn/s/blog_5e16f1770100lp7u.html</a>
+
+### 脚注问题
+
+模板的脚注上面的横线前面增加了空，但实际上不应该空。
+
+修改方法：打开cls文件，搜索```\renewcommand{\footnoterule}{\vfill\noindent```，删除下一行中的```\hspace{7.4mm}```即可。
+
 
 

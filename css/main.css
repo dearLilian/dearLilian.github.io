@@ -754,7 +754,7 @@ img::-moz-selection {
     padding: 5px 5px 5px 5px;
     font-size: .6em;
     text-shadow: none;
-    color: #BF1827;
+    color: #000000;
   }
   .navigation__item {
     display: inline-block;
