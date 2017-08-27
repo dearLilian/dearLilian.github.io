@@ -11,6 +11,7 @@ tags: 工具
 * TOC
 {:toc}
 
+转自：http://www.cnblogs.com/cspku/articles/Git_cmds.html
 
 ### 查看、添加、提交、删除、找回，重置修改文件
 
