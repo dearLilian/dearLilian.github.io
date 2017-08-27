@@ -67,8 +67,24 @@ author: lilian
 
 {% include share.html %}
 
-{% include dashang.html %}
+<!--{% include dashang.html %} remove the dashang module-->
 
 {% include new-old.html %}
 
-{% include comments.html %}
+<!--{% include comments.html %}-->
+
+<!--添加github 评论框-->
+<div id="gitmentContainer"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+    owner: 'dearLilian',
+    repo: :'https://github.com/dearLilian/dearLilian.github.io',
+    oauth: {
+        client_id: '581bd96523e3f5c2eff6',
+        client_secret: '6ae18be198d13f2a5d023c71effddddfd48b107a',
+   },
+});
+gitment.render('gitmentContainer');
+</script>
