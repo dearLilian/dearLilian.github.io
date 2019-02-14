@@ -190,6 +190,17 @@ done
 ```
 
 
+如何生成一个简单的循环数组：
+
+```
+for i in {1..10}
+do
+	echo $i
+done
+```
+
+
+
 #### while 循环
 
 ```shell
