@@ -56,6 +56,57 @@ tag: 博客
 
 - 参考：<a href="http://blog.csdn.net/rainloving/article/details/45745491">Windows 上安装 Jekyll</a>。安装好Jekyll后。打开github客户端，登录。将之前建立的仓库clone到本地。例如我的：dearLilian.github.io， clone到d://lilian/下。就会看到d://lilian/下出现了一个名为dearLilian.github.io的文件夹。
 
+### MacOs安装Jekyll
+
+参考： <a href="https://jekyllrb.com/docs/installation/macos/">Mac安装Jekyll</a>
+
+安装的时候可能会出现权限问题。可以用以下命令先设置当前用户的相关权限。
+
+```shell
+sudo chown -R $(whoami):admin /usr/local/* && sudo chmod -R g+rwx /usr/local/*
+```
+
+安装ruby3.1.3成功后，会出现：
+
+```shell
+>>> Successfully installed ruby 3.1.3 into /Users/lilianli/.rubies/ruby-3.1.3
+```
+
+
+```
+echo "source $(brew --prefix)/opt/chruby/share/chruby/chruby.sh" >> ~/.bash_profile
+echo "source $(brew --prefix)/opt/chruby/share/chruby/auto.sh" >> ~/.bash_profile
+echo "chruby ruby-3.1.3" >> ~/.bash_profile # run 'chruby' to see actual version
+````
+
+然后记得执行下：
+
+
+```shell
+source ~/.bash_profile"
+````
+
+要不然一直没有生效。
+
+这时候再执行
+
+```shell
+gem install jekyll
+```
+
+来安装jekyll。
+
+成功后显示：
+
+```
+Done installing documentation for webrick, unicode-display_width, terminal-table, safe_yaml, rouge, forwardable-extended, pathutil, mercenary, liquid, kramdown, kramdown-parser-gfm, ffi, rb-inotify, rb-fsevent, listen, jekyll-watch, google-protobuf, sass-embedded, jekyll-sass-converter, concurrent-ruby, i18n, http_parser.rb, eventmachine, em-websocket, colorator, public_suffix, addressable, jekyll after 30 seconds
+28 gems installed
+```
+
+
+
+
+
 ### 网站评论与统计
 
 - 首先是网站统计，你需要在<a href="http://tongji.baidu.com/web/register">百度统计</a>和<a href="https://www.google.com/analytics/">Google Analytics</a>注册账号，并提取相应的id（详细操作请baidu or google）例如我的baidu id为e572ae9801b3a18891f123796b889f77，google id为UA-88738012-1，后面会使用。
@@ -74,7 +125,26 @@ cd d://lilian/dearLilian.github.io
 jekyll serve
 ```
 
-然后浏览器打开：localhost:4000，此时就能看到原作者（baixin）的博客。
+最开始构建发现很多包都没有。jekyll server无法执行成功。需要安装依赖包。
+
+
+在项目根目录执行：
+
+```shell
+bundle install
+```
+
+失败的情况下，试试：
+````shell
+gem install ffi -v '1.13.1' -- --with-cflags="-Wno-error=implicit-function-declaration"
+```
+gem install ffi -v '1.9.18' -- --with-cflags="-Wno-error=implicit-function-declaration"
+
+试试了各种方法好像也不对。
+但是等等，，最后很奇怪，也不知道咋修复这个问题了。
+
+
+然后浏览器打开：localhost:4000，此时就能看到本地环境的博客内容了
 
 那么现在来修改模板，呈现你的东西吧。（为了方便编辑各种格式的文件，建议事先安装sublime Text）
 

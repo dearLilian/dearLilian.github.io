@@ -1,13 +1,13 @@
 ---
 layout: page
-title: 关于我 
+title: About 
 header: 根据快速导航到相应的文章
 group: navigation
 ---
 
-书写生活，充实自我。
+Live by your nature.
 
-### 简介
+### Introduction
 
 - 领域：数据挖掘，机器学习，
 

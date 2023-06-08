@@ -117,9 +117,9 @@ h1 {
 h2 {
   font-size: 1.5em; 
   padding: 10px 20px;
-  background: #87CEFF;
-  border-radius: 10px; 
-  box-shadow: 0px 5px 5px #828282;
+  background: #dae4eb;
+/*  border-radius: 10px; */
+/*  box-shadow: 0px 5px 5px #828282;*/
   border-left: 6px solid #8B0000; 
   /*text-align: center;*/
 }
@@ -127,13 +127,13 @@ h2 {
 h3 {
   font-size: 1.2em; 
   text-indent: 4px; 
-  border-radius: 4px; 
+/*  border-radius: 4px; */
   padding: 6px 15px;
   margin-bottom: 20px;
   margin-top: 5px;
-  background:#B9D3EE;
+  background:#dae4eb;
   /*0px right, 5px botton, 5px fuzzy*/
-  box-shadow: 0px 5px 5px #9FB6CD;
+/*  box-shadow: 0px 5px 5px #9FB6CD;*/
   border-left: 6px solid #1874CD; 
   position:relative;
 }

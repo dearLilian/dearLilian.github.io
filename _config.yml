@@ -1,11 +1,11 @@
 # Basic
 title: LILIAN
-subtitle: 心灵之窗
-description: 书写生活，充实自我
+subtitle: Window to life
+description: Live by your nature
 # 头像里面的标题
-avatarTitle: 李文宝
+avatarTitle: Wenbao Li
 # 头像里面的描述
-avatarDesc: 数据挖掘 / 机器学习
+avatarDesc: LIFE AND WORK
 url: "http://lilian.info"
 
 # Comment
@@ -72,19 +72,19 @@ kramdown:
 highlighter: rouge
 
 # supported colors: blue, green, purple, red, orange or slate. If you need clear, leave it empty.
-#cover_color: 
+cover_color: blue
 
 # The blog button should not be removed.
 blog_button:
-    title: 主页
+    title: Home
 
 # Navigation buttons in the front page.s
 nav:
-    - {title: 归档, description: archive, url: '/archive'}   
-    - {title: 分类, description: tags, url: '/tags'}
-    - {title: 留言, description: messages, url: '/messages'}
-    - {title: 资源, description: links, url: '/links'}      
-    - {title: 关于, description: about, url: '/about'}      
+    - {title: Archive, description: archive, url: '/archive'}   
+    - {title: Tags, description: tags, url: '/tags'}
+    - {title: Comments, description: messages, url: '/messages'}
+    - {title: Resources, description: links, url: '/links'}      
+    - {title: About, description: about, url: '/about'}      
     
 
 # Pagination
