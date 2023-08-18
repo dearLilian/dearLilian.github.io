@@ -72,20 +72,21 @@ kramdown:
 highlighter: rouge
 
 # supported colors: blue, green, purple, red, orange or slate. If you need clear, leave it empty.
-cover_color: blue
+#cover_color: blue
 
 # The blog button should not be removed.
 blog_button:
     title: Home
 
 # Navigation buttons in the front page.s
-nav:
+nav: 
     - {title: Archive, description: archive, url: '/archive'}   
     - {title: Tags, description: tags, url: '/tags'}
     - {title: Comments, description: messages, url: '/messages'}
     - {title: Resources, description: links, url: '/links'}      
     - {title: About, description: about, url: '/about'}      
     
+plugins: [jekyll-paginate]
 
 # Pagination
 gems: [jekyll-paginate,jekyll-sitemap]

@@ -1,21 +1,23 @@
 ---
 layout: default
 ---
- 
-
 
 <div class="main-post-list hidden">
 
   <ol class="post-list">
-    test
+
+    <!-- 这是一个循环，遍历paginator.posts中的每个post对象 -->
     {% for post in paginator.posts %}
 
 
-    <h2 class="post-list__post-title post-title"><a href="{{ post.url }}" title="访问 {{ post.title }}">{{ post.title }}</a></h2>
+    <!-- 显示帖子标题的链接 -->
+    <h2 class="post-list__post-title post-title">
+      <a href="{{ post.url }}" title="访问 {{ post.title }}">{{ post.title }}</a>
+    </h2>
     <br/>
     
     <li>
-
+      <!-- 显示帖子内容的摘要 -->
       <p class="excerpt">{{ post.content | strip_html | strip_newlines | truncate: 250 }}&hellip;</p>
       
       <br/>
@@ -32,7 +34,7 @@ layout: default
             <span class="post-list__meta--tags-right">{{ post.tags }}</span>
           </div>
           <div class = "post-list-small-mate">
-          <a class="btn-border-small" href={{ post.url }}>阅读全文 » </a>
+          <a class="btn-border-small" href={{ post.url }}>More » </a>
           </div>
       </div>
 
